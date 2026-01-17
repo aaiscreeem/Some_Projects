@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "c:\Users\adity\OneDrive\Desktop\2022MT11257\test.py", line 116, in <module>
+    run_experiment('AdaBoost', ENSEMBLING_CONFIG, PRE_PROCESSING_CONFIG, 'AdaBoost',  10,0.98)
+  File "c:\Users\adity\OneDrive\Desktop\2022MT11257\test.py", line 86, in run_experiment
+    train_X, train_y = train_processor.get_all_data()
+  File "c:\Users\adity\OneDrive\Desktop\2022MT11257\utils.py", line 113, in get_all_data
+    X = pca.fit_transform(X)
+  File "C:\Users\adity\anaconda3\lib\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\adity\anaconda3\lib\site-packages\sklearn\decomposition\_pca.py", line 462, in fit_transform
+    U, S, Vt = self._fit(X)
+  File "C:\Users\adity\anaconda3\lib\site-packages\sklearn\decomposition\_pca.py", line 485, in _fit
+    X = self._validate_data(
+  File "C:\Users\adity\anaconda3\lib\site-packages\sklearn\base.py", line 565, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "C:\Users\adity\anaconda3\lib\site-packages\sklearn\utils\validation.py", line 902, in check_array
+    raise ValueError(
+ValueError: Expected 2D array, got 1D array instead:
+array=[].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
